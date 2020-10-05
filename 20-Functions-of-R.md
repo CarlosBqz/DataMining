@@ -1,13 +1,17 @@
 
-## Barplot
+## Casefold 
 
-**Example : Basic Barplot in R
+– Translate character to lower or upper case.
 
-First, we need to create a vector containing the values of our bars:
+Our characters are transformed to lower case if we specify upper = FALSE (default option) within the casefold function…
 
-values <- c(0.4, 0.75, 0.2, 0.6, 0.5)                 #Create values for barchar
+*casefold(x, upper = FALSE)               # Convert to lower case letters*
 
-use the barplot() function in R as follows:
+*#"example"*
 
-barplot(values)                                       # Basic barchart in R
-![aps://statisticsglobe.com/wp-content/uploads/2019/10/figure-1-basic-barplot-in-R-programming-language.png
+…or to upper case if we specify upper = TRUE:
+
+*casefold(x, upper = TRUE)                 # Convert to upper case letters*
+
+
+*#"EXAMPLE"*
