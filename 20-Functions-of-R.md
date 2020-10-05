@@ -31,3 +31,23 @@
 <code>  #1  2  3  4  5  6  7  8  9 10 </code>
 
 The previous output of the RStudio console shows that our example data is a simple numeric vector ranging from 1 to 10.
+
+## Dbinom – 
+
+**Definition:** Return corresponding value of binomial density.
+
+**Example:**
+
+apply the pbinom function to create a plot of the binomial cumulative distribution function (CDF) in R. First, we need to create an input vector.
+
+<code> x_pbinom <- seq(0, 100, by = 1)                       # Specify x-values for pbinom function </code>
+
+Now, we can apply the pbinom command…
+
+<code>  y_pbinom <- pbinom(x_pbinom, size = 100, prob = 0.5)  # Apply pbinom function </code>
+  
+…and draw a plot of the binomial CDF:
+
+<code> plot(y_pbinom)                                        # Plot pbinom values </code>
+![a](https://statisticsglobe.com/wp-content/uploads/2019/08/figure-2-binom-distribution-function-plot-in-r.png)
+
