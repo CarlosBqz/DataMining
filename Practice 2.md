@@ -96,3 +96,77 @@ For comparison, let’s also apply the exists function to a vector that we did n
 <code> exists("y")                               # Apply exists function to non-existent vector
   
 #FALSE </code>
+
+
+---------------------------------------------------------------------------------------------------
+
+#Function 10 nchar(x)
+  #Count the number of characters in a string
+
+word <- "Language"						#Declaring a string to work with
+nchar(word)								#Applying the nchar function
+#Result 8
+
+---------------------------------------------------------------------------------------------------
+
+#Function 11 nrow(df)
+  #Shows the number of rows in the data frame
+
+#An example of a data frame, where x are the rows and y the columns
+df <- data.frame(x = 1:3, y = c('a', 'b', 'c')) 
+nrow(df) 								#Applying the function nrow to a data frame
+
+---------------------------------------------------------------------------------------------------
+
+#Function 12 ncol(df)
+  #Shows the number of columns of a data frame
+ncol(df)								#Applying the function ncol to a data frame
+
+---------------------------------------------------------------------------------------------------
+
+#Function 13 dim(df)
+  #Shows the number of rows and columns of a data frame
+dim(df)									#Applying the function dim to a data frame
+
+---------------------------------------------------------------------------------------------------
+
+#Function 14 View(df)
+  #Shows the data frame table in a window
+View(df) 								#Applying the function View to a data frame
+
+---------------------------------------------------------------------------------------------------
+
+#Function 15 hist(z)
+  #Creates an histogram of a vector
+z <- c(1, 1, 2, 2, 3, 4, 4, 5, 6, 6)	#Declaring the vector
+hist(z)									#Applying the hist function to a vector
+
+---------------------------------------------------------------------------------------------------
+
+#Function 16 plot(x)
+  #Get Quantile Percentages of a vector
+quantile(z)								#Applying the quantile function to a vector
+
+---------------------------------------------------------------------------------------------------
+
+#Function 17
+	#Plots the data of a data frame
+plot(df)								#Applying the function to a data frame
+
+---------------------------------------------------------------------------------------------------
+
+#Function 18 mean(X)
+  #Get the mean of a vector
+mean(z)									#Applying the mean function to a vector
+
+---------------------------------------------------------------------------------------------------
+
+#Function 19 median(x)
+  #Gets the median of a vector
+median(z)								#Applying the median function to a vector
+
+---------------------------------------------------------------------------------------------------
+
+#Function 20 rm(list = ls())
+  #Removes all the variables in the environment
+rm(list = ls())							#Applying the rm function to our environment
