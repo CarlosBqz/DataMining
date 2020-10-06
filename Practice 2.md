@@ -98,6 +98,8 @@ For comparison, let’s also apply the exists function to a vector that we did n
 #FALSE </code>
 
 
+##nchar(x)
+
 **Function 10 nchar(x)**
   Count the number of characters in a string
 
@@ -106,6 +108,7 @@ For comparison, let’s also apply the exists function to a vector that we did n
 **Result 8**
 
 
+##nrow(df)
 
 **Function 11 nrow(df)**
   Shows the number of rows in the data frame
@@ -115,24 +118,28 @@ An example of a data frame, where x are the rows and y the columns
 <code> nrow(df) 								Applying the function nrow to a data frame
 
 
+##ncol(df)
 
 **Function 12 ncol(df)**
   Shows the number of columns of a data frame
 <code> ncol(df)								Applying the function ncol to a data frame
 
 
+##dim(df)
 
 **Function 13 dim(df)**
   Shows the number of rows and columns of a data frame
 <code> dim(df)									Applying the function dim to a data frame
 
 
+##View(df)
 
 **Function 14 View(df)**
   Shows the data frame table in a window
 <code> View(df) 								Applying the function View to a data frame
 
 
+##hist(z)
 
 **Function 15 hist(z)**
   Creates an histogram of a vector
@@ -140,30 +147,35 @@ An example of a data frame, where x are the rows and y the columns
 <code> hist(z)									Applying the hist function to a vector
 
 
+##quantile(z)
 
 **Function 16 plot(x)**
   Get Quantile Percentages of a vector
 <code> quantile(z)								Applying the quantile function to a vector
 
 
+##plot(x)
 
 **Function 17**
 	Plots the data of a data frame
 <code> plot(df)									Applying the function to a data frame
 
 
+##mean(x)
 
 **Function 18 mean(X)**
   Get the mean of a vector
 <code> mean(z)									Applying the mean function to a vector
 
 
+##median(x)
 
 **Function 19 median(x)**
   Gets the median of a vector
 <code> median(z)								Applying the median function to a vector
 
 
+##rm()
 
 **Function 20 rm(list = ls())**
   Removes all the variables in the environment
