@@ -144,7 +144,7 @@ We can calculate the geometric mean based on these R functions as follows:
 
 the geometric mean of our example data is 4.209156.
 
-##Heatmap
+## Heatmap
 
 **Function 8 Heatmap**
 
