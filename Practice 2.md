@@ -1,4 +1,4 @@
-20 Functions in R 
+# 20 Functions in R 
 
 ## Casefold 
 
@@ -52,7 +52,7 @@ Now, we can apply the pbinom command…
 <code> plot(y_pbinom)                                        # Plot pbinom values </code>
 ![a](https://statisticsglobe.com/wp-content/uploads/2019/08/figure-2-binom-distribution-function-plot-in-r.png)
 
-## dt 
+## Dt 
 **Definition:** Return corresponding value of Student t PDF.
 
 **Example(Student t Probability Density Function)**
@@ -70,4 +70,29 @@ The Student t density values are now stored in the data object y_dt. We can draw
 <code>plot(y_dt)                                          # Plot dt values </code>
 ![a1](https://statisticsglobe.com/wp-content/uploads/2019/09/figure-1-r-command-dt-density-plot.png)
 
+## Exists 
 
+**Definition:** Check whether an object is defined in the R environment.
+
+**Basic R Syntax:***
+<code>exists(x) </code>
+
+**Example: (Apply exists() Function to Vector)**
+
+Let’s create a simple vector for our first example:
+
+<code> x <- c(2, 9, 5, 3)                        # Create example vector </code>
+  
+ And not let’s use exists() to check if this vector is properly defined in our R environment:
+ 
+ <code> exists("x")                               # Apply exists function to vector
+  
+#TRUE </code>
+
+The exists function returns TRUE to the RStudio console. In other words: Yes, the vector x exists.
+
+For comparison, let’s also apply the exists function to a vector that we did not define before:
+
+<code> exists("y")                               # Apply exists function to non-existent vector
+  
+#FALSE </code>
