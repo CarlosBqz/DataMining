@@ -167,6 +167,26 @@ Create heatmap in Base R.
   ![a3](https://statisticsglobe.com/wp-content/uploads/2019/10/figure-1-heatmap-function-base-r.png)
   
    illustrates the output of the previous R code. By default, the heatmap function returns a heatmap with column and row names as well as a dendogram.
+   
+## Length
+
+**Function 9 Lenght(x)**
+
+Return the length of data objects such as vectors or lists.
+
+**Example:**
+
+we need to create a vector or array in R:
+
+<code> x <- c(8, 17, 23, 93, - 20, 15, 13, 55, 29, - 84)  # Example vector in R </code>
+
+Now, we can apply the length R command to this vector:
+
+<code>length(x)                                          # Apply length function  </code>
+
+<code> # 10 </code>
+
+The length function returns the value 10 to the RStudio console – The length of our vector is 10.
 
 ## nchar(x)
 
