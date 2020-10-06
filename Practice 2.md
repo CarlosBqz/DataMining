@@ -1,3 +1,4 @@
+20 Functions in R 
 
 ## Casefold 
 
@@ -50,4 +51,23 @@ Now, we can apply the pbinom command…
 
 <code> plot(y_pbinom)                                        # Plot pbinom values </code>
 ![a](https://statisticsglobe.com/wp-content/uploads/2019/08/figure-2-binom-distribution-function-plot-in-r.png)
+
+## dt 
+**Definition:** Return corresponding value of Student t PDF.
+
+**Example(Student t Probability Density Function)**
+
+First, we need to create a vector of quantiles in R:
+
+<code>x_dt <- seq(- 10, 10, by = 0.01)                    # Specify x-values for dt function </code>
+
+After running the previous R code, we can apply the dt command in R as follows. In the example, we use 3 degrees of freedom (as specified by the argument df = 3):
+
+<code>y_dt <- dt(x_dt, df = 3)                            # Apply dt function </code>
+  
+The Student t density values are now stored in the data object y_dt. We can draw a graph representing these values with the plot R function:
+
+<code>plot(y_dt)                                          # Plot dt values </code>
+![a1](https://statisticsglobe.com/wp-content/uploads/2019/09/figure-1-r-command-dt-density-plot.png)
+
 
