@@ -102,104 +102,147 @@ For comparison, let’s also apply the exists function to a vector that we did n
 ## nchar(x)
 
 **Function 10 nchar(x)**
+
 Count the number of characters in a string
 
+
 Declaring a **string** to work with
+
 <code> word <- "Language"						</code>
+
+
 Applying the **nchar** function
+
 <code> nchar(word)								</code>
+
 **Result 8**
 
 
 ## nrow(df)
 
 **Function 11 nrow(df)**
-  Shows the number of rows in the data frame
+
+Shows the number of rows in the data frame
+
 
 An example of a data frame, where x are the rows and y the columns
+
 <code> df <- data.frame(x = 1:3, y = c('a', 'b', 'c'))  </code>
+
+
 Applying the function **nrow** to a data frame 
+
 <code> nrow(df) 										</code>
 
 
 ## ncol(df)
 
 **Function 12 ncol(df)**
+
 Shows the number of columns of a data frame
 
+
 Applying the function **ncol** to a data frame
+
 <code> ncol(df)								 </code>
 
 
 ## dim(df)
 
 **Function 13 dim(df)**
-  Shows the number of rows and columns of a data frame
+
+Shows the number of rows and columns of a data frame
   
-  Applying the function **dim** to a data frame
+
+Applying the function **dim** to a data frame
+
 <code> dim(df) </code>
 
 
 ## View(df)
 
 **Function 14 View(df)**
-  Shows the data frame table in a window
 
-  Applying the function **View** to a data frame
+Shows the data frame table in a window
+
+
+Applying the function **View** to a data frame
+
 <code> View(df)  </code>
 
 
 ## hist(z)
 
 **Function 15 hist(z)**
-  Creates an histogram of a vector
+
+Creates an histogram of a vector
+
 
 Declaring the vector
+
 <code> z <- c(1, 1, 2, 2, 3, 4, 4, 5, 6, 6)</code>
+
+
 Applying the **hist** function to a vector 
+
 <code> hist(z)</code>
 
 
 ## quantile(z)
 
 **Function 16 plot(x)**
-  Get Quantile Percentages of a vector
+
+Get Quantile Percentages of a vector
+
 
 Applying the quantile function to a vector
+
 <code> quantile(z) </code>
 
 
 ## plot(x)
 
 **Function 17**
+
 Plots the data of a data frame
 
+
 Applying the function to a data frame
+
 <code> plot(df) </code>
 
 
 ## mean(x)
 
 **Function 18 mean(X)**
-  Get the mean of a vector
+
+Get the mean of a vector
+
 
 Applying the mean function to a vector
+
 <code> mean(z)</code>
 
 
 ## median(x)
 
 **Function 19 median(x)**
+
 Gets the median of a vector
 
+
 Applying the median function to a vector
+
 <code> median(z) </code>
 
 
 ## rm()
 
 **Function 20 rm(list = ls())**
+
 Removes all the variables in the environment
 
+
 Applying the rm function to our environment
+
 <code> rm(list = ls()) </code>
