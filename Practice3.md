@@ -32,10 +32,10 @@ decimal points.
 
 **Hint 1**
 Use:
-round()
-mean()
-max()
-min()
+- round()
+- mean()
+- max()
+- min()
 
 
 ## Data
