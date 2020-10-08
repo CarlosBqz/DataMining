@@ -2,6 +2,8 @@
 
 ## Casefold 
 
+**Function 1 Casefold**
+
 **Definition:** Translate character to lower or upper case.
 
 **Example:** Our characters are transformed to lower case if we specify upper = FALSE (default option) within the casefold function…
@@ -19,6 +21,8 @@
 
 ##  Cut
 
+**Function 2 Cut**
+
 **Definition:** The cut R function converts numeric values into factorial ranges.
 
 **Basic R Syntax:** <code> cut(my_values, my_breaks)              # Basic R syntax of cut function </code>
@@ -33,7 +37,9 @@
 
 The previous output of the RStudio console shows that our example data is a simple numeric vector ranging from 1 to 10.
 
-## Dbinom – 
+## Dbinom 
+
+**Function 3 Dbinom**
 
 **Definition:** Return corresponding value of binomial density.
 
@@ -53,6 +59,9 @@ Now, we can apply the pbinom command…
 ![a](https://statisticsglobe.com/wp-content/uploads/2019/08/figure-2-binom-distribution-function-plot-in-r.png)
 
 ## Dt 
+
+**Function 4 dt**
+
 **Definition:** Return corresponding value of Student t PDF.
 
 **Example(Student t Probability Density Function)**
@@ -71,6 +80,8 @@ The Student t density values are now stored in the data object y_dt. We can draw
 ![a1](https://statisticsglobe.com/wp-content/uploads/2019/09/figure-1-r-command-dt-density-plot.png)
 
 ## Exists 
+
+**Function 5 Exists**
 
 **Definition:** Check whether an object is defined in the R environment.
 
@@ -97,7 +108,85 @@ For comparison, let’s also apply the exists function to a vector that we did n
   
 #FALSE </code>
 
+## Format
 
+**Function 6 Format**
+
+The format R function encodes data objects into common formats.
+
+**Example:**
+
+<code> format(values)                # Basic R syntax of format function </code>
+
+<code> set.seed(243266)              # Set seed </code>
+
+<code>  x <- rnorm(5)                 # Random values </code>
+
+<code>  x                             # Print example vector </code>
+
+<code> #  -1.5894026 -0.9007914  0.8997223 -0.4310145  1.5865680 </code>
+
+It shows that the example data is a numeric vector containing five vector elements.
+
+## Geometric Mean
+
+**Function 7 Geometric Mean**
+
+Compute the geometric mean
+
+**Example:**
+
+We can calculate the geometric mean based on these R functions as follows:
+
+<code>exp(mean(log(x)))                  # Compute geometric mean manually </code>
+  
+<code> # 4.209156 </code>
+
+the geometric mean of our example data is 4.209156.
+
+## Heatmap
+
+**Function 8 Heatmap**
+
+Create heatmap in Base R.
+
+**Example:**
+
+<code> set.seed(123)                                                     # Set seed for reproducibility </code>
+
+<code> data <- matrix(rnorm(100, 0, 10), nrow = 10, ncol = 10)           # Create example data </code>
+  
+<code> colnames(data) <- paste0("col", 1:10)                             # Column names  </code>
+  
+<code> rownames(data) <- paste0("row", 1:10) </code>
+  
+  Our data contains ten columns and ten rows with normally distributed random values.
+  
+  <code> heatmap(data)                                                     # Apply heatmap function </code>
+  
+  ![a3](https://statisticsglobe.com/wp-content/uploads/2019/10/figure-1-heatmap-function-base-r.png)
+  
+   illustrates the output of the previous R code. By default, the heatmap function returns a heatmap with column and row names as well as a dendogram.
+   
+## Length
+
+**Function 9 Lenght(x)**
+
+Return the length of data objects such as vectors or lists.
+
+**Example:**
+
+we need to create a vector or array in R:
+
+<code> x <- c(8, 17, 23, 93, - 20, 15, 13, 55, 29, - 84)  # Example vector in R </code>
+
+Now, we can apply the length R command to this vector:
+
+<code>length(x)                                          # Apply length function  </code>
+
+<code> # 10 </code>
+
+The length function returns the value 10 to the RStudio console – The length of our vector is 10.
 
 ## nchar(x)
 
@@ -246,3 +335,4 @@ Removes all the variables in the environment
 Applying the rm function to our environment
 
 <code> rm(list = ls()) </code>
+
