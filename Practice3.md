@@ -84,7 +84,7 @@ Use:
     best.month
 
 ## The Worst Month Is Where Profit After Tax Was Equal To The Minimum
-    worst.month <- profit.after.tax == min(profit.afeter.tax)
+    worst.month <- profit.after.tax == min(profit.after.tax)
     worst.month
 
 ## Convert All Calculations To Units Of One Thousand Dollars
@@ -93,4 +93,14 @@ Use:
     profit.1000 <- round(profit / 1000)
     profit.after.tax.1000 <- round(profit.after.tax / 1000)
 
+## Print Results
+    revenue.1000
+    expenses.1000
+    profit.1000
+    profit.after.tax.1000
+    profit.margin
+    good.months
+    bad.months
+    best.month
+    worst.month
 
