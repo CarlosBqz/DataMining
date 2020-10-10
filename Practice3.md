@@ -104,3 +104,22 @@ Use:
     best.month
     worst.month
 
+## Results:
+    > revenue.1000
+    [1] 15  8  9  9  8  8 11 10 10 14 11 15
+    > expenses.1000
+     [1] 12  6 12 12  9  1  3  6  7 17 10  4
+    > profit.1000
+    [1]  3  2 -4 -3 -1  7  8  4  3 -2  1 12
+    > profit.after.tax.1000
+     [1]  2  1 -3 -2  0  5  6  3  2 -2  0  8
+    > profit.margin
+     [1]  12  18 -30 -22  -5  63  50  28  23 -11   4  53
+    > good.months
+     [1]  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE
+    > bad.months
+     [1] FALSE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE FALSE
+    > best.month
+     [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE
+    > worst.month
+     [1] FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
