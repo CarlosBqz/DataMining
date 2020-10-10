@@ -123,3 +123,30 @@ Use:
      [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE
     > worst.month
      [1] FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+     
+ ## BONUS:
+## Preview Of What's Coming In The Next Section
+    M <- rbind(
+      revenue.1000,
+      expenses.1000,
+      profit.1000,
+      profit.after.tax.1000,
+      profit.margin,
+      good.months,
+      bad.months,
+      best.month,
+      worst.month
+    )
+    
+## Print The Matrix
+    > M
+                          [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11] [,12]
+    revenue.1000            15    8    9    9    8    8   11   10   10    14    11    15
+    expenses.1000           12    6   12   12    9    1    3    6    7    17    10     4
+    profit.1000              3    2   -4   -3   -1    7    8    4    3    -2     1    12
+    profit.after.tax.1000    2    1   -3   -2    0    5    6    3    2    -2     0     8
+    profit.margin           12   18  -30  -22   -5   63   50   28   23   -11     4    53
+    good.months              1    0    0    0    0    1    1    1    1     0     0     1
+    bad.months               0    1    1    1    1    0    0    0    0     1     1     0
+    best.month               0    0    0    0    0    0    0    0    0     0     0     1
+    worst.month              0    0    1    0    0    0    0    0    0     0     0     0
