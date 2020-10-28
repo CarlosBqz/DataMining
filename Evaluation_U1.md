@@ -237,3 +237,36 @@ Now we just print the variable where the plot is stored:
 - Oce2013
 
 ![](https://lh3.googleusercontent.com/aqzecvyM_XzG5mm_fV6Mq1XB6cvOHwXCJ3h8PMjAjQxh3UWnZ7uQrdW1OtQ6tTlPFINB0wHUApb_Bq009gkIzeq0Me-3SeNgMdcO7ShEvOfp88qt65ULLmzz8ypZjsVJhj2rTlw-EfQ-0k3FjI9Piuj9J8jFYUYVPs8jw6Y4iW0i0Ex_baLQEBgRDL1OHh-Icxv9oEt1eBm84XnXff0dVzXiy008e1KNx2P_wKY-Nr5Nv2kYAz65ZBLQ8sfq1tjz8yPKqbHOF0D7FvFqYyssNqa_ZkWGmPN1qjRoWTLhwSfqGPwh_btt-1Btx4ETyyqLAUc0Tf6k2oZCnMf0kl7um-UOpOgmKCbkeVZKXZzjBvhzRnMcnyofRqCdlo-zb_OAu0K6TIYX7-2I8-kClzokfOaBH90FmlJ6y8UGnyFxaJNnskjOF-oEmUJ8pdHxcXHdfI21TLs8UFFI5JOTnOBoqElfq7HogCsdrlNvD9TL63UQFv8fPqBvX8lP9C0sBlv3yFxCSkgF-jFJTSy2dPXs6SkTcKEN3kMKDLIuYGhWz26Rcf3l2kWgMEurmh3iZhrLwVClgrM_6kcJiRMix-bsAIbg5r2KtIgMgT9khqzgGivAS62PUNkkiucNbOSJOFKw0uKj_kjC0tZ6NXZlPrptKsKhhlbqC43B2dkARvdwsDkxXjd2P78ys7yYKvnz=w814-h540-no?authuser=0)
+
+
+**Plot "Fertility Rate vs Life Expectancy" in Regions.**
+
+To finalize the evaluation practice, we have to plot the Fertility Rate vs Life Expectancy by Regions, to do so we are using the first data frames that we combined using the merge method and the ggplot library to create the plots.
+
+We create a variable that will store the plot named FRvsLE1960, then we fulfill the ggplot method specifying the data frame DF1960, the axis x for Fertility Rate and axis y for Life Expectancy and at the end we declare "color=Region" to separate every country in a region with a color that will identify as part of it. Then, to give a title, subtitle and a renaming of the axis, we are using the labs function aswell as the theme function that allow us to center those titles.
+
+```r
+#Here we declare the variable for plotting the data from 1960
+FRvsLE1960 <- ggplot(data=DF1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Region))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+
+#Here we declare the variable for plotting the data from 2013
+FRvsLE2013 <- ggplot(data=DF2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_2013, color=Region))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy", subtitle = "2013", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+```
+
+And finally we print the plots:
+
+```r
+FRvsLE1960
+```
+![](https://lh3.googleusercontent.com/pw/ACtC-3dVHByzP4kyvozJ5uijBBSt_KlyP79YJgqLM5jADKu_ZudioyjCVvzSauuTEi_823VEALnsW4cTNUPwBnojdQvuYSCiYccjJJRiZLPfKU7vl6OGHfCzSQTXEVZabLzQYhIfHvASzdMa3znLxE26icos=w814-h540-no?authuser=0)
+
+```r
+FRvsLE2013
+```
+![](https://lh3.googleusercontent.com/pw/ACtC-3eZJCTCkm06uKxgj9r0YUTuy0D5OXRHl6nlu6CNrm3kI0alx5QNx4-6b8F138kyVh9fXAjC-iCS-FpzHWwMb5kBP0jgz13sBDS9cDCDfFqVq-qcUPcI1yxksfRokT2AhPBYVqe0uQyrF_Ij_nWsRZyT=w814-h540-no?authuser=0)
