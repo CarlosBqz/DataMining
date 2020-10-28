@@ -62,7 +62,7 @@ dfLifeExp1960 <- data.frame(Country_Code, Life_Expectancy_At_Birth_1960)
 dfLifeExp2013 <- data.frame(Country_Code, Life_Expectancy_At_Birth_2013)
 ```
 
-After declaring the data frames, we can remove the vector that we have declared at the beginning of the practice, this will free up space in the environment.
+After creating the data frames, we can remove the vector that we have declared at the beginning of the practice, this will free up space in the environment.
 
 ```r
 #Removing vectors, we don't need them anymore
@@ -86,3 +86,105 @@ mydata2013 <- filter(mydata, Year == 2013)
 
 mydata1960 <- filter(mydata, Year == 1960)
 ```
+
+Now we have separated the data in four data frames, two from 1960 and two from 2013. That means we can merge the data frames with their respective years. To do so, we are using the merge function where we have to specify the two data frames that we want to combine and the values that will help us to identify how the information will be stored.
+```r
+#Merge the data of the csv with the data from the vectors using Country.Code as a guide
+DF1960 <- merge(mydata1960, dfLifeExp1960, by.x = "Country.Code", by.y = "Country_Code")
+
+DF2013 <- merge(mydata2013, dfLifeExp2013, by.x = "Country.Code", by.y = "Country_Code")
+```
+
+In this block of code we will create a data frame for every country using the variables DF1960 and DF2013, this is to analyze every region separately in those two years. To do so we are filtering the data frames that we have created before this block and specifying the region that we want to analyze in the condition of the filter.
+
+```r
+#By Countries
+#1960
+Africa1960 <- filter(DF1960, Region== "Africa")
+Asia1960 <- filter(DF1960, Region== "Asia")
+Europe1960 <- filter(DF1960, Region== "Europe")
+MiddleEast1960 <- filter(DF1960, Region== "Middle East")
+Oceania1960 <- filter(DF1960, Region== "Oceania")
+TheAmericas1960 <- filter(DF1960, Region== "The Americas")
+#2013
+Africa2013 <- filter(DF2013, Region== "Africa")
+Asia2013 <- filter(DF2013, Region== "Asia")
+Europe2013 <- filter(DF2013, Region== "Europe")
+MiddleEast2013 <- filter(DF2013, Region== "Middle East")
+Oceania2013 <- filter(DF2013, Region== "Oceania")
+TheAmericas2013 <- filter(DF2013, Region== "The Americas")
+```
+
+Now we create the plots of every region, to do so we are using the library ggplot2, to create a plot while using this function we need to write the following:
+data: the data frame that we will be using.
+- x: the data that will represent x.
+- y: the data that will represent y.
+- color: this will separate by colors every country in the data frame.
+- geom_point: this specify that we will be using a scatter plot.
+- labs: this allow us to specify a title, subtitle, names of the x and y axis.
+- theme: this function allow us to center the title and subtitle.
+
+```r
+#Graf por regiones
+#Africa1960
+Af1960 <- ggplot(data=Africa1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in Africa by Country", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Asia1960
+As1960 <- ggplot(data=Asia1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in Asia by Country", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Theamericas1960
+TheA1960 <- ggplot(data=TheAmericas1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in The Americas by Country", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Europe1960
+Eu1960 <- ggplot(data=Europe1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in The Europe by Country", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Middle East1960
+Midd1960 <- ggplot(data=MiddleEast1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in MiddleEast by Country", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Oceania1960
+Oce1960 <- ggplot(data=Oceania1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in Oceania by Country", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Asia2013
+As2013 <- ggplot(data=Asia2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_2013, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in Asia by Country", subtitle = "2013", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Africa2013
+Af2013 <- ggplot(data=Africa2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_2013, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in Africa by Country", subtitle = "2013", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#TheAmericas2013
+TheA2013 <- ggplot(data=TheAmericas2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_2013, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in TheAmericas by Country", subtitle = "2013", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Europe2013
+Eu2013 <- ggplot(data=Europe2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_2013, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in Europe by Country", subtitle = "2013", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Middle East 2013
+Midd2013 <- ggplot(data=MiddleEast2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_2013, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in MiddleEast by Country", subtitle = "2013", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+#Ocenia2013
+Oce2013 <- ggplot(data=Oceania2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_2013, color=Country.Name))+
+  geom_point(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy in Oceania by Country", subtitle = "2013", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+```
+
