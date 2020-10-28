@@ -116,7 +116,7 @@ TheAmericas2013 <- filter(DF2013, Region== "The Americas")
 ```
 
 Now we create the plots of every region, to do so we are using the library ggplot2, to create a plot while using this function we need to write the following:
-data: the data frame that we will be using.
+- data: the data frame that we will be using.
 - x: the data that will represent x.
 - y: the data that will represent y.
 - color: this will separate by colors every country in the data frame.
@@ -188,3 +188,27 @@ Oce2013 <- ggplot(data=Oceania2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Bi
   theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
 ```
 
+Now we just print the variable where the plot is stored:
+
+Af1960
+<iframe src="https://drive.google.com/file/d/1sE8yV8Ia18gAWKLOygapmDgHWNkJnhO5/preview" width="640" height="480"></iframe>
+
+As1960
+
+TheA1960
+
+Eu1960
+
+Midd1960
+
+Oce1960
+
+As2013
+
+Af2013
+
+TheA2013
+
+Eu2013
+
+Midd2013
