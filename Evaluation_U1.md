@@ -191,7 +191,8 @@ Oce2013 <- ggplot(data=Oceania2013,aes(x=Fertility.Rate, y=Life_Expectancy_At_Bi
 Now we just print the variable where the plot is stored:
 
 Af1960
-<iframe src="https://drive.google.com/file/d/1sE8yV8Ia18gAWKLOygapmDgHWNkJnhO5/preview" width="640" height="480"></iframe>
+
+[![](https://photos.google.com/album/AF1QipP_7B24wdOiu75Hx4P0vjNAk6RPFtpfb88DN4zI)](https://photos.google.com/album/AF1QipP_7B24wdOiu75Hx4P0vjNAk6RPFtpfb88DN4zI)
 
 As1960
 
