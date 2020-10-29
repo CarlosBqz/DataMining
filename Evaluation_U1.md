@@ -276,4 +276,5 @@ FRvsLE2013
 At the end of the analysis of the Life Expectancy versus Fertility Rate graphs, we were able to reach different conclusions, where the predominant ones are the following two:
 - Europe has the highest average life expectancy as well as the lowest average Fertility Rate, as much as in the years 1960 and 2013, having a life expectancy of 65 to 70 years which increased in 2013 at 75 and 85 on average. Likewise, the Fertility Rate decreased to less than two children per family in 2013, when in 1960 the average was two to three children.
 - On the other hand, Africa has the highest average Fertility Rate of all regions, hovering between 6 to 8 children per family, as well as the lowest life expectancy hovering around 40 to 50 years. In 2013, Africa's Fertility Rate dropped to an average of 4 to 6 children per family and its life expectancy increased to an average of 55 to 65 years.
+
 -Therefore, it can be said that the lower the birth rate, the longer the life expectancy, and otherwise the higher the birth rate, the shorter the life expectancy, as shown in each graph.
