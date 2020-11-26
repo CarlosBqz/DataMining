@@ -90,12 +90,12 @@ We created our second filter that will be on the name of the studios that make m
 - The function scale_size_continuous works to give a gradual size to the points.
 - xlab and ylab work to give a custom title to the x and y axes.
 - ggtitle is to give a custom title to the graph.
-- The theme function works to manipulate the size, color and font of the labels generated earlier. 
- 1. axis.title.x / axis.title.y work to manipulate the size and color of the x- and y-axis titles.
- 2. axis.text.x / axis.text.y work to manipulate the size and color of the texts in the x and y axes that are in the graphic.
- 3. plot.title works to manipulate the title of the chart.
- 4. legend.title works to manipulate the size of the legends, in this case they are on the right, they are Studio and Budget.
- 5. text in this case we use it to give a specific font to the texts.
+- The theme function works to manipulate the size, color and font of the labels generated earlier:
+   1. axis.title.x / axis.title.y work to manipulate the size and color of the x- and y-axis titles.
+   2. axis.text.x / axis.text.y work to manipulate the size and color of the texts in the x and y axes that are in the graphic.
+   3. plot.title works to manipulate the title of the chart.
+   4. legend.title works to manipulate the size of the legends, in this case they are on the right, they are Studio and Budget.
+   5. text in this case we use it to give a specific font to the texts.
  
 ```r
  grafica <- ggplot(data=mydata2, aes(x=Genre, y=Gross...US))+
