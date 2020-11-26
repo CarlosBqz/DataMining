@@ -67,6 +67,34 @@ Since we have loaded our csv file where we have too much data that really only n
     #filtro1
     filtro <- (mydata$Genre == "action") | (mydata$Genre == "adventure") | (mydata$Genre == "animation") | (mydata$Genre == "comedy") | (mydata$Genre == "drama")
 
+We created our second filter that will be on the name of the studios that make movies. 
+
+    #filtro2
+    filtro2 <- mydata$Studio %in% c("Buena Vista Studios", "WB", "Fox", "Universal", "Sony", "Paramount Studios")
+    filtro
+    filtro2
+ 
+ After having created the second filter, we generate a second data frame taking as a starting point the filters 1 and 2.
+
+    mydata2 <- mydata[filtro & filtro2,]
+    mydata2
+
+### We generate the graphic where:
+
+We use mydata2 where the data is already filtered.
+
+As the graph you are looking for has in the "X" axis to Genre and in "Y" to Gross in US, we declare the x and y axes with those values.
+
+ 
+
+
+
+
+
+ 
+
+
+
  
 
 
