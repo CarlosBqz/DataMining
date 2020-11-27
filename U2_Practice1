@@ -34,3 +34,14 @@ SC9A
 **Date:**
 Tijuana, Baja California, November 13, 2020. 
 </div>
+
+
+```r
+geom_polygon
+ggplot(data=DF1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=Region))+
+  geom_polygon(alpha=0.8) + 
+  labs(title = "Fertility Rate vs Life Expectancy", subtitle = "1960", x= "Fertility Rate", y = "Life Expectancy") +
+  theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+```
+
+![](https://lh3.googleusercontent.com/pw/ACtC-3ccCfuSXLFNOXt-j5CHUtpGybMZ5GBYPd_ZGuQP5dEUlMT2_kWdlUXBPNubG38Ta7dE3O6GuYdlVJDbQLl3NF5HXJ5xDYGSyTT-3R9Cc3apOLt8VPSVpZHjwklpC0_QxLNZBPZoRcHzFwhGE9lNzcS4=w758-h495-no?authuser=0)
