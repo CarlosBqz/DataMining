@@ -86,6 +86,9 @@ ggplot(data = GRect, aes(x, y)) +
 ![](https://lh3.googleusercontent.com/pw/ACtC-3f5n1KCyLqNlMOCBe7-tnFtJ8Bi3uwiv-pPYsy8twgWEbltiqiWkhP7ShVvbbD0544JM-RXRUau7bu4d7aCS8aSiqHUd96zAxRo6K7Fl080Xc6xxk2BulFumoyC3isUaR4HKfbNg4duOWY4tCE-5vVP=w784-h508-no?authuser=0)
 
 **geom_boxplot**
+```r
 
+ggplot(mpg, aes(hwy, class)) + geom_boxplot()
 
+```
 ![](https://lh3.googleusercontent.com/pw/ACtC-3d_aBq3ofq1ml8nOszBHXrAqF50wdm44U5l1z2d4h5cpXNKFEHsNdNDulqMj3FxuJBAOq6iC_oQsLC_-Lm0dRdQBTxQt-JT_LMtojsM1aMYhAiKRTHaRbcHdDGfjPnSFkiPxEh8SGhebMxf7gEfSpQO=w801-h517-no?authuser=0)
