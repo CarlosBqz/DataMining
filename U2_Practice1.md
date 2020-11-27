@@ -72,7 +72,16 @@ ggplot(data=DF1960,aes(x=Fertility.Rate, y=Life_Expectancy_At_Birth_1960, color=
 
 
 **geom_tile**
-
+```r
+GRect <- data.frame(
+  x = rep(c(2, 5, 7, 9, 12), 2),
+  y = rep(c(1, 2), each = 5),
+  z = factor(rep(1:5, each = 2)),
+  w = rep(diff(c(0, 4, 6, 8, 10, 14)), 2)
+)
+ggplot(data = GRect, aes(x, y)) +
+  geom_tile(aes(fill = z), colour = "grey50")
+```
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3f5n1KCyLqNlMOCBe7-tnFtJ8Bi3uwiv-pPYsy8twgWEbltiqiWkhP7ShVvbbD0544JM-RXRUau7bu4d7aCS8aSiqHUd96zAxRo6K7Fl080Xc6xxk2BulFumoyC3isUaR4HKfbNg4duOWY4tCE-5vVP=w784-h508-no?authuser=0)
 
