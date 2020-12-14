@@ -38,6 +38,17 @@ Tijuana, Baja California, December 14, 2020. 
 
 ### Evaluation 3 Naive Bayes
 
+
+#### Introduction
+In the following documentation we will be applying the model Naive Bayes to a data set using the function naiveBayes() alocated in the library "e1071".
+
+We will solve the following instructions to be evaluated in the corresponding unit:
+
+- Implement the Naive Bayes classification model with the Social_Network_Ads.csv data set and using the e1071 library with the naiveBayes () function. Once the classifier is obtained, do the corresponding data visualization analysis.
+
+- At the end of the development, explain in detail what the Naive Bayes classification model consists of and also the detailed explanation corresponding to data visualization.
+
+
 ##### First we store the path of our folder to get the csv that we are looking for in an easier way.
 ```r
 getwd()
