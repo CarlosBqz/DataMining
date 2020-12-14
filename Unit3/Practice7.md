@@ -63,7 +63,7 @@ points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 ##### Graphic
-![]()
+![](https://lh3.googleusercontent.com/pw/ACtC-3fTLGp54MdlQLGRpvWdOh6vI4ml-N9hIiqeZWcDRkFFG6grutmqrrL5XpeZnVXV2xKnNpq9RnQ1NQ-jhfjQu7IWWNwNE9KmFNAAYBRwtl1p4UP9-QdipOnD3I-cSegGg9heaPLjzvjIemKNvWW6yj39=w634-h370-no?authuser=0)
 
 ##### We do the same but now with the test set data
 ```r
@@ -84,4 +84,4 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 
 ##### Graphic
-![]()
+![](https://lh3.googleusercontent.com/pw/ACtC-3eigcSR4gtnm3FxaSIRqs41wLEVxloSnG5bMB3cvN6-WB-sn1jvYcPQHayh6t1gqymS507LPNUCxPhakgEjkNqJIqyCGzsdQn3uROXpBvOc2ZeUeypFglyRPZpzdOxKtbDNjvbdPGJGtZrJfd2qocC_=w641-h421-no?authuser=0)
