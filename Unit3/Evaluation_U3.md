@@ -36,10 +36,10 @@ Tijuana, Baja California, December 14, 2020. 
 </div>
 
 
-### Evaluation 3 Naive Bayes
+## Evaluation 3 Naive Bayes
 
 
-#### Introduction
+## Introduction
 In the following documentation we will be applying the model Naive Bayes to a data set using the function naiveBayes() alocated in the library "e1071".
 
 We will solve the following instructions to be evaluated in the corresponding unit:
@@ -48,6 +48,7 @@ We will solve the following instructions to be evaluated in the corresponding un
 
 - At the end of the development, explain in detail what the Naive Bayes classification model consists of and also the detailed explanation corresponding to data visualization.
 
+## Development
 
 ##### First we store the path of our folder to get the csv that we are looking for in an easier way.
 ```r
@@ -144,3 +145,6 @@ points(grid_set, pch = '.', col = ifelse(y_grid == 1, 'springgreen3', 'tomato'))
 points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 ![](https://lh3.googleusercontent.com/pw/ACtC-3daDUpZapcP5fQDKNFMgLPv9CJqK2itSJmQV_UCfYravGwzNnJQ6Fyyl5LB566DB7DviK93VwXnXYHjqeBLAQxcoXRQzZPAGmM-qjj8h7rAjbZO2nyP9lNs-DWwotGubxrSUP2RB-oSlEuPc3TeQlQC=w739-h484-no?authuser=1)
+
+
+## Conclusion
