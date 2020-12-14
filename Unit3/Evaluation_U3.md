@@ -15,7 +15,7 @@ Evaluation 3
 BDD-1703 SC9A Minería de Datos
 
 **Unit:**
- II
+ III
 
 **Professor:**
 JOSE CHRISTIAN ROMERO HERNANDEZ
