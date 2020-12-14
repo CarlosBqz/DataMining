@@ -32,7 +32,7 @@ Garcia Rincon Daniel Gerardo
 SC9A
 
 **Date:**
-Tijuana, Baja California, November 26, 2020. 
+Tijuana, Baja California, December 14, 2020. 
 </div>
 
 
