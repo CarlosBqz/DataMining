@@ -72,7 +72,7 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 
 #### Graphic
-![](https:)
+![](https://lh3.googleusercontent.com/pw/ACtC-3fwtuHZa0ByYITx2svK7cQUJXNbXTOPMJ1BcO06pFlXkmQFyBmWrSJovGlAKeGqfaRZ4-0yauGHdgzRRB6AwBeHGrmb4RVZ6FgmxAPcq81Fip8iOJQSplyWKj71gYRyCEvhDTYtS5275AM-cU6ALHuQ=w670-h455-no?authuser=0)
 
 ##### Here we use the same as in the previous graph only with the test data.
 ```r
@@ -92,4 +92,4 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 ```
 
 #### Graphic
-![]()
+![](https://lh3.googleusercontent.com/pw/ACtC-3dDaSzht99_q6hzbxVwDmgqalUeEdj4SkAupPeW_QZhFLtcrtUBy1dElx_LnkaJufE8t61STljaq4XEU9GoYDTD11twYRhZggfpmkO1-RpvERsesiOUBEAatp1K5H9Zrv2fJ8QtwuanXobDoHxuO0JR=w667-h459-no?authuser=0)
