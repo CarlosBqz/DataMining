@@ -24,7 +24,7 @@ plot(1:10,
 ```
     
 ##### Graphic
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.definicionabc.com%2Fcomunicacion%2Fgrafica.php&psig=AOvVaw3Kx5uG6F7xrPhz3CIKeP-4&ust=1608059005446000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCqwOSUzu0CFQAAAAAdAAAAABAD.jpg)
+![](https://lh3.googleusercontent.com/pw/ACtC-3d8pbx-i-iuBGOJD8cI6Z0WZ66N1_qXi8VBc2o5RZe224EVCM3uuSwfuT9b89c6OB398FR35nAiSQyu_wppwxv5C3Of2ZRmF6F8VtnSJGqK-HI9-O7Z1yeirePEuKOIICE0Ih7tmOOQbaIQdC51mcg3=w660-h359-no?authuser=0)
 
 ##### The K-means method is adjusted to the data set
 ```r
@@ -47,8 +47,8 @@ clusplot(dataset,
          main = paste('Clusters of customers'),
          xlab = 'Annual Income',
          ylab = 'Spending Score')
-        ```
+```
         
 ##### Graphic
-![]()
+![](https://lh3.googleusercontent.com/pw/ACtC-3eoTO5MfxweNjZdYdVMK2e7PnnDDRVJvLUn4FHgBnCkMc_7bA_n3bXNPPXyCYcU2PN6RIiO00uK84wG6hYekqEZ9l3SdYUtCzCYHrqnY4eMj8LsrpKq9HP7f2g2q6AI7W0oCqWVhKQnlt3ja5n1W7h4=w661-h394-no?authuser=0)
 
