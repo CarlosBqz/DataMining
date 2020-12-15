@@ -148,3 +148,6 @@ points(set, pch = 21, bg = ifelse(set[, 3] == 1, 'green4', 'red3'))
 
 
 ## Conclusion
+Naive Bayes is one of the simplest and most powerful classification algorithms out there. This algorithm assumes that the effect of a particular feature on a class is independent of the other features. That is, the algorithm evaluates each possibility independently and multiplies these possibilities with each other to obtain a prediction.
+
+In the graph we can see how the model predicts whether a person, depending on their age and salary, is going to buy an object or not. The red dots mean that the object was not purchased and the green color that it was purchased. In both graphs there is a similar behavior, where younger people with a lower salary tend not to buy said object and the majority of adults with a better salary tend to acquire it.
