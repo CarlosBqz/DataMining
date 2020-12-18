@@ -95,3 +95,6 @@ plot(1:10, tot.withinss, type="b", pch=19)
 ```
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3dvnQbTtm6nxLtFWbdsyNojZ5kxk90WJBjRpN3wEwOjirzQH6jZMSMNt0iQ3s-xrk5PZINd0MoUu3Nw9wMMlD9q4ZD5Pwao1m_vs6mvLu8PWnPz9cH9PUZnaCyRW4hBlVKXQ3tjUtY65OSmYx9xfdbG=w1104-h518-no?authuser=1)
+
+## Conclusion
+As we can see, the k means method is to be able to group similar data and find out what they are compatible with and therefore it needs a fixed number that will be the divided groups of certain data that are similar. As we could see at the end of the graph, the breaking point was 3 and those are the groups that were used in the first graph where we could appreciate the difference between the setosa and the verginica, versicolor groups that had a lot of noise as they came together .
