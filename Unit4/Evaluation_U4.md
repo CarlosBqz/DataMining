@@ -71,6 +71,7 @@ set.seed(101)
 irisCluster <- kmeans(df[,1:4], center=3, nstart=20)
 irisCluster
 ```
+![](https://lh3.googleusercontent.com/pw/ACtC-3cmZHHZEWNLP1V3_PF0GIUy_arVt_mUacf_nJ5YELOOsuef_4wQ0gGKd8oEhntu_RlSquqkKo2XUuebg6iL_RAh9C8lJ7nnI0vpMRWOVLHfo3KOtZtDi4CyHbM6pvOnyWu9U5VGOtVd5VQMoaMR03l9=w1475-h762-no?authuser=1)
 
 ##### 5. We plot the clusters.
 ```r
