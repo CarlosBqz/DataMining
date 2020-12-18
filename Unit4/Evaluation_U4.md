@@ -81,6 +81,8 @@ clusplot(iris, irisCluster$cluster, color=T, shade=T, labels=0, lines=0)
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3e2QaKZJfm8ZIWW0CvwwqN5yRp17RaHnT-uzYGkGESzD2ZsCpXiR-fSk7V6X6B_HwHrpOBhCe6ceIIcryAVKvb3RLtCmNpdaZXEzL2p_2DP-6ALcU9_Bep0O83H4tPMerOoZMIhkmcap5Di8lA0YrOP=w1259-h801-no?authuser=1)
 
+#### We can see the setosa cluster perfectly explained, meanwhile virginica and versicolor have a little noise between their clusters.
+
 ##### 6. We apply the elbow method to better see the implementation of the data.
 ```r
 tot.withinss <- vector(mode="character", length=10)
