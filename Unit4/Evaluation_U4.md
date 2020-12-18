@@ -78,6 +78,7 @@ library(cluster)
 clusplot(iris, irisCluster$cluster, color=T, shade=T, labels=0, lines=0)
 ```
 
+![](https://lh3.googleusercontent.com/pw/ACtC-3e2QaKZJfm8ZIWW0CvwwqN5yRp17RaHnT-uzYGkGESzD2ZsCpXiR-fSk7V6X6B_HwHrpOBhCe6ceIIcryAVKvb3RLtCmNpdaZXEzL2p_2DP-6ALcU9_Bep0O83H4tPMerOoZMIhkmcap5Di8lA0YrOP=w1259-h801-no?authuser=1)
 
 ##### 6. We apply the elbow method to better see the implementation of the data.
 ```r
@@ -93,4 +94,4 @@ for (i in 1:10){
 plot(1:10, tot.withinss, type="b", pch=19)
 ```
 
-## Conclusion
+![](https://lh3.googleusercontent.com/pw/ACtC-3dvnQbTtm6nxLtFWbdsyNojZ5kxk90WJBjRpN3wEwOjirzQH6jZMSMNt0iQ3s-xrk5PZINd0MoUu3Nw9wMMlD9q4ZD5Pwao1m_vs6mvLu8PWnPz9cH9PUZnaCyRW4hBlVKXQ3tjUtY65OSmYx9xfdbG=w1104-h518-no?authuser=1)
